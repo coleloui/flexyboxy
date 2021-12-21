@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+#box {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	background-color: salmon;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: stretch;
+}
+
+.container {
+	border: greenyellow solid 5px;
+	min-height: 5rem;
+	width: 20rem;
+	background-color: slateblue;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 100%;
+}
+
+.title {
+	color: snow;
+	background-color: steelblue;
+	margin: 0 0 0.25rem;
+	flex: 0 0 75%;
+	text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+	.container {
+		flex: 0 0 45%;
+		min-height: 15rem;
+	}
+	.title {
+		flex: 0 0 50%;
+	}
+}
